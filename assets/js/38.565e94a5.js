@@ -1,0 +1,42 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[38],{
+
+/***/ 597:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/@vuepress/core/node_modules/.cache/vuepress","cacheIdentifier":"18d1decd-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader/lib??ref--1-1!./node_modules/@vuepress/markdown-loader??ref--1-2!./blogs/frontEnd/20210512-npm.md?vue&type=template&id=4eb36fe2&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ContentSlotsDistributor',{attrs:{"slot-key":_vm.$parent.slotKey}},[_c('p',[_vm._v("前几天有一个任务，需要修改依赖包中的组件，通常操作是把依赖包下载到本地，改完添加版本号 publish 到内网仓库，然后主工程 update 即可，但是这样调试就会非常麻烦，需要频繁迭代版本，所幸有一个 "),_c('code',[_vm._v("npm link")]),_vm._v(" 指令，可以链接本地包用作调试，类似于 CocoaPods 的 path 命令。")]),_vm._v(" "),_c('h3',{attrs:{"id":"调试步骤"}},[_c('a',{staticClass:"header-anchor",attrs:{"href":"#调试步骤"}},[_vm._v("#")]),_vm._v(" 调试步骤")]),_vm._v(" "),_c('ol',[_c('li',[_vm._v("在组件工程（比如：xxx）中，生成一个软链接。"),_c('div',{staticClass:"language-sh line-numbers-mode"},[_c('pre',{pre:true,attrs:{"class":"language-sh"}},[_c('code',[_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("npm")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("link")]),_vm._v("\n")])]),_vm._v(" "),_c('div',{staticClass:"line-numbers-wrapper"},[_c('span',{staticClass:"line-number"},[_vm._v("1")]),_c('br')])])]),_vm._v(" "),_c('li',[_vm._v("在主工程中链接本地组件。"),_c('div',{staticClass:"language-sh line-numbers-mode"},[_c('pre',{pre:true,attrs:{"class":"language-sh"}},[_c('code',[_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("npm")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("link")]),_vm._v(" xxx\n")])]),_vm._v(" "),_c('div',{staticClass:"line-numbers-wrapper"},[_c('span',{staticClass:"line-number"},[_vm._v("1")]),_c('br')])])]),_vm._v(" "),_c('li',[_vm._v("重新运行主工程，这样本地组件后续改动都会同步到主工程。"),_c('div',{staticClass:"language-sh line-numbers-mode"},[_c('pre',{pre:true,attrs:{"class":"language-sh"}},[_c('code',[_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("npm")]),_vm._v(" run dev\n")])]),_vm._v(" "),_c('div',{staticClass:"line-numbers-wrapper"},[_c('span',{staticClass:"line-number"},[_vm._v("1")]),_c('br')])])])]),_vm._v(" "),_c('h3',{attrs:{"id":"关闭调试"}},[_c('a',{staticClass:"header-anchor",attrs:{"href":"#关闭调试"}},[_vm._v("#")]),_vm._v(" 关闭调试")]),_vm._v(" "),_c('ol',[_c('li',[_vm._v("在本地组件工程中删除软链接。"),_c('div',{staticClass:"language-sh line-numbers-mode"},[_c('pre',{pre:true,attrs:{"class":"language-sh"}},[_c('code',[_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("npm")]),_vm._v(" unlink\n")])]),_vm._v(" "),_c('div',{staticClass:"line-numbers-wrapper"},[_c('span',{staticClass:"line-number"},[_vm._v("1")]),_c('br')])])]),_vm._v(" "),_c('li',[_vm._v("主工程中取消 link，并恢复到线上包。"),_c('div',{staticClass:"language-sh line-numbers-mode"},[_c('pre',{pre:true,attrs:{"class":"language-sh"}},[_c('code',[_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("npm")]),_vm._v(" unlink --no-save package "),_c('span',{pre:true,attrs:{"class":"token operator"}},[_vm._v("&&")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("npm")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("install")]),_vm._v("\n")])]),_vm._v(" "),_c('div',{staticClass:"line-numbers-wrapper"},[_c('span',{staticClass:"line-number"},[_vm._v("1")]),_c('br')])])])]),_vm._v(" "),_c('h3',{attrs:{"id":"软链接"}},[_c('a',{staticClass:"header-anchor",attrs:{"href":"#软链接"}},[_vm._v("#")]),_vm._v(" 软链接")]),_vm._v(" "),_c('p',[_vm._v("简单的说，就是由本地包所映射的一个全局链接，其路径是"),_c('code',[_vm._v("{prefix}/lib/node_modules/")]),_vm._v("，prefix 可以通过"),_c('code',[_vm._v("npm config get prefix")]),_vm._v("命令获取。")]),_vm._v(" "),_c('img',{attrs:{"src":_vm.$withBase('/imgs/npm_link.png'),"alt":"mixureSecure"}}),_vm._v(" "),_c('h3',{attrs:{"id":"组件发版"}},[_c('a',{staticClass:"header-anchor",attrs:{"href":"#组件发版"}},[_vm._v("#")]),_vm._v(" 组件发版")]),_vm._v(" "),_c('ol',[_c('li',[_c('p',[_vm._v("使用 nrm 切换 npm 源到私有仓库地址，（如已切换则跳过）。")]),_vm._v(" "),_c('div',{staticClass:"language-sh line-numbers-mode"},[_c('pre',{pre:true,attrs:{"class":"language-sh"}},[_c('code',[_vm._v("// 安装全局nrm\n"),_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("npm")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("install")]),_vm._v(" nrm -g\n// 添加私有源\nnrm "),_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("add")]),_vm._v(" xxx http://xxxx/\n// 查看所有私有源\nnrm "),_c('span',{pre:true,attrs:{"class":"token function"}},[_vm._v("ls")]),_vm._v("\n// 切换到私有源\nnrm use xxx\n")])]),_vm._v(" "),_c('div',{staticClass:"line-numbers-wrapper"},[_c('span',{staticClass:"line-number"},[_vm._v("1")]),_c('br'),_c('span',{staticClass:"line-number"},[_vm._v("2")]),_c('br'),_c('span',{staticClass:"line-number"},[_vm._v("3")]),_c('br'),_c('span',{staticClass:"line-number"},[_vm._v("4")]),_c('br'),_c('span',{staticClass:"line-number"},[_vm._v("5")]),_c('br'),_c('span',{staticClass:"line-number"},[_vm._v("6")]),_c('br'),_c('span',{staticClass:"line-number"},[_vm._v("7")]),_c('br'),_c('span',{staticClass:"line-number"},[_vm._v("8")]),_c('br')])])]),_vm._v(" "),_c('li',[_c('p',[_vm._v("修改"),_c('code',[_vm._v("package.json")])]),_vm._v(" "),_c('ul',[_c('li',[_vm._v("保证项目名和入口地址路径正确。")]),_vm._v(" "),_c('li',[_vm._v("修改版本号。"),_c('div',{staticClass:"language-js line-numbers-mode"},[_c('pre',{pre:true,attrs:{"class":"language-js"}},[_c('code',[_c('span',{pre:true,attrs:{"class":"token string-property property"}},[_vm._v("\"name\"")]),_c('span',{pre:true,attrs:{"class":"token operator"}},[_vm._v(":")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"token string"}},[_vm._v("\"xxx\"")]),_c('span',{pre:true,attrs:{"class":"token punctuation"}},[_vm._v(",")]),_vm._v("\n"),_c('span',{pre:true,attrs:{"class":"token string-property property"}},[_vm._v("\"version\"")]),_c('span',{pre:true,attrs:{"class":"token operator"}},[_vm._v(":")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"token string"}},[_vm._v("\"1.0.0\"")]),_c('span',{pre:true,attrs:{"class":"token punctuation"}},[_vm._v(",")]),_vm._v("\n"),_c('span',{pre:true,attrs:{"class":"token string-property property"}},[_vm._v("\"main\"")]),_c('span',{pre:true,attrs:{"class":"token operator"}},[_vm._v(":")]),_vm._v(" "),_c('span',{pre:true,attrs:{"class":"token string"}},[_vm._v("\"src/index.js\"")]),_c('span',{pre:true,attrs:{"class":"token punctuation"}},[_vm._v(",")]),_vm._v("\n")])]),_vm._v(" "),_c('div',{staticClass:"line-numbers-wrapper"},[_c('span',{staticClass:"line-number"},[_vm._v("1")]),_c('br'),_c('span',{staticClass:"line-number"},[_vm._v("2")]),_c('br'),_c('span',{staticClass:"line-number"},[_vm._v("3")]),_c('br')])])])])]),_vm._v(" "),_c('li',[_c('p',[_vm._v("修改 README.md，标注发版日志。")])]),_vm._v(" "),_c('li',[_c('p',[_c('code',[_vm._v("npm run build")]),_vm._v(" (如已构建则跳过)。")])]),_vm._v(" "),_c('li',[_c('p',[_c('code',[_vm._v("npm login")]),_vm._v("，输入账号密码（如已登录则跳过）。")])]),_vm._v(" "),_c('li',[_c('p',[_c('code',[_vm._v("npm publish")]),_vm._v("，发布到远程仓库。")])])]),_vm._v(" "),_c('hr'),_vm._v(" "),_c('p',[_vm._v("另外，如需覆盖版本号(比如 1.0.3)，则先删除线上原有版本"),_c('code',[_vm._v("npm unpublish xxx@1.0.3")]),_vm._v("，然后再执行"),_c('code',[_vm._v("npm publish")]),_vm._v("。")])])}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./blogs/frontEnd/20210512-npm.md?vue&type=template&id=4eb36fe2&
+
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(10);
+
+// CONCATENATED MODULE: ./blogs/frontEnd/20210512-npm.md
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var _20210512_npm = __webpack_exports__["default"] = (component.exports);
+
+/***/ })
+
+}]);
